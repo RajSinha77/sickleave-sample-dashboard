@@ -51,6 +51,8 @@ monthly_pattern = monthly_factors * data['adjusted_sick_days'].mean()
 
 # Create Dash app
 app = Dash(__name__)
+server = app.server
+
 app.title = "Siemens Sick Leave Dashboard"
 
 app.layout = html.Div([
